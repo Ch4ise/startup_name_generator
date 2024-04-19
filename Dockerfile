@@ -1,7 +1,7 @@
 FROM ruby:2.1
 
 COPY . /src
-WORKDIR /
+WORKDIR /src
 RUN bundler install
 
 CMD ["rackup", "--host", "0.0.0.0"]
