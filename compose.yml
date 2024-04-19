@@ -3,8 +3,8 @@ version: "3"
 services:
  www:
   build: .
-   volumes:
+  volumes:
     - .:/src
   ports:
-   - 80:9292
+    - 8080:9292
 
